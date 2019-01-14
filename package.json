@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/giffin94/Avatars-Project/issues"
   },
-  "homepage": "https://github.com/giffin94/Avatars-Project#readme"
+  "homepage": "https://github.com/giffin94/Avatars-Project#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "request": "^2.88.0"
+  }
 }
