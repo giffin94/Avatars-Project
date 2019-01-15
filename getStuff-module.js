@@ -42,21 +42,3 @@ var please = {
 
 
 module.exports = please;
-
-function checkForErrorsAndGo(errorCode, userInfo, cb) {
-    if (errorCode === 404) {
-        console.log(`Error! The repo you are looking for doesn't exist! Check your spelling. Error: `, errorCode);
-    } else if (errorCode > 500) {
-        console.log('Uh-oh! Looks like Github is having some troubles... Error: ', errorCode);
-    } else if (errorCode === 401) {
-        console.log('Your personal access token is invalid, try updating it. Error: ', errorCode);
-    } else {
-
-        userInfo.forEach(function(element, i) {
-        var uName = userInfo[i]["login"];
-        var thisFilePath = `${imageFolder}${uName}.jpg`;
-        cb(userInfo[0]["avatar_url"], thisFilePath);
-        
-    });
-    }
-}
