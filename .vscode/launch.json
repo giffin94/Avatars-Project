@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}/lib/download_avatars.js",
-            "args": ["jquery", "jquery"]
+            "args": ["giffin94", "Avatars-Project"]
         }
     ]
 }
